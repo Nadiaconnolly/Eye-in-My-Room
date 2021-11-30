@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets id="VRAssets">
+        <img src="img/marina-photosphere-4k.jpg" id="marina" />
+        <img src="img/myRoom.jpg" id="living-room" />
+        <img src="img/snow.jpg" id="snow" />
+        <img src="img/spaceTexture.jpg" id="brick" />
+      </a-assets> 
+
+      <a-box position="-0.0968 2.3133 -4.4419" rotation="0 45 0" color="#4CC3D9" material="color: #1f0505" geometry="primitive: sphere; radius: 0.6"></a-box>
+      <a-sphere position="-0.09316 2.30257 -5" radius="1.25" color="#EF2D5E" material="color: #7068ac" geometry="primitive: torus; radius: 2; radiusTubular: 0.25"></a-sphere> 
+      <a-box position="-0.0968 2.28897 -5.23944" rotation="0 45 0" color="#4CC3D9" material="color: #2d349a" geometry="primitive: sphere; radius: 0.99"></a-box>
+      <a-box position="-0.0968 2.28897 -5.23944" rotation="0 45 0" color="#4CC3D9" material="color: #2d349a" geometry="primitive: sphere; radius: 0.99"></a-box>
+      <a-cylinder position="0.08581 1.81767 -3.78954" radius="0.5" height="1.5" color="#FFC65D" material="color: #ffefd1" geometry="primitive: sphere; radius: 0.18"></a-cylinder>
+      <a-cylinder position="0.27291 2.18426 -3.84082" radius="0.5" height="1.5" color="#FFC65D" material="color: #b9ad98" geometry="primitive: sphere; radius: 0.15"></a-cylinder>
+
+
+      <!-- <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="50" height="50" src="#brick" repeat="100 100"></a-plane>
+
+      <!-- <a-sky color="#ECECEC"></a-sky> -->
+      <!-- <a-sky id="theSky" src="#marina" color="rgb(255,255,255)"></a-sky> -->
+      <a-sky id="theSky" src="#living-room" color="rgb(255,255,255)"></a-sky>
+    </a-scene>
+  </body>
+</html>
+
+
